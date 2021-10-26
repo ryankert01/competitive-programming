@@ -3,7 +3,7 @@ using namespace std;
 
 int f (int n) {
 	if (n <= 100) {
-		n = f (f (n + 11));
+		n = f (f (n + 11)); //recrusive
 	}
 	else {
 		n = n - 10;
