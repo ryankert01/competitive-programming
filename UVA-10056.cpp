@@ -1,4 +1,6 @@
-//Algorithm
+//Algorithm at notion
+//https://www.notion.so/UVA-10056-6efc4fff0c544e68b2dc7e8291e38bdd
+
 #include <iostream>
 #include <cmath>
 #include <iomanip>
