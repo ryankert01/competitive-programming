@@ -10,10 +10,6 @@ int main(){
         cin >> b;
         if(!(a%2))a++;
         if(!(b%2))b--;
-        if(a==b){
-            cout << "Case " << i << ": "<< a << endl;
-            continue;
-        } 
         cout << "Case " << i << ": "<< (a+b)*((b-a)/2+1)/2 << endl;
     }
 }
