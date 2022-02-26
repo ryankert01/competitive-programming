@@ -1,4 +1,4 @@
-# UVA Online Judge solve with c++
+# UVA Online Judge Solve using c++
 
 ```
 contributor: Ryan
