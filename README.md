@@ -1,5 +1,5 @@
 # UVA Online Judge solve with c++
 
 ```
-contrib: Ryan
+contributor: Ryan
 ```
