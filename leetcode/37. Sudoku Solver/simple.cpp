@@ -2,7 +2,7 @@ class Solution {
 public:
     
     // return true if and only if this move obay the law of Sudoku
-    bool obayRule(int row, int col, char c, vector< vector < char > >& board){
+    bool obeyRule(int row, int col, char c, vector< vector < char > >& board){
         for(int i = 0; i < 9; i++)
         {
             if(board[i][col] == c)
@@ -24,7 +24,7 @@ public:
                 {
                     for(char pos = '1'; pos <= '9'; pos++)
                     {
-                        if(obayRule(i,j,pos,board))
+                        if(obeyRule(i,j,pos,board))
                         {
                             board[i][j] = pos;
                             if(dfs(board) == true)
