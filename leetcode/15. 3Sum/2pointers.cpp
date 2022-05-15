@@ -24,6 +24,8 @@ public:
                     a++; b--;
                     while(nums[a] == nums[a-1] && a < b)
                         a++;
+                    while(nums[b] == nums[b+1] && a < b)
+                        b--;
                 }
             }
         }
