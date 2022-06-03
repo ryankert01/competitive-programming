@@ -1,3 +1,7 @@
+From 
+
+https://leetcode.com/problems/range-sum-query-2d-immutable/discuss/75350/Clean-C%2B%2B-Solution-and-Explaination-O(mn)-space-with-O(1)-time
+
 Construct a 2D array sums[row+1][col+1]
 
 (notice: we add additional blank row ``sums[0][col+1]={0}``` and blank column ```sums[row+1][0]={0}``` to remove the edge case checking), so, we can have the following definition
