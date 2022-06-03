@@ -1,4 +1,6 @@
 // row-oriented approach, dynamic programming
+// Runtime: 443 ms, faster than 88.61% of C++ online submissions for Range Sum Query 2D - Immutable.
+// Memory Usage: 147.8 MB, less than 92.98% of C++ online submissions for Range Sum Query 2D - Immutable.
 class NumMatrix {
 public:
     vector<vector<int>>v;
