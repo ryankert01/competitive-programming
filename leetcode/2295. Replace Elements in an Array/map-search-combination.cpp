@@ -1,49 +1,18 @@
-class TextEditor {
+class Solution {
 public:
-    string s,t;
-    TextEditor() {
-        s = t = "";
-    }
-    
-    void addText(string text) {
-        s+=text;
-    }
-    
-    int deleteText(int k) {
-        if(k > s.size())k=s.size();
-        for(int i = 0;i < k; i++)
-            s.pop_back();
-        return k;
-    }
-    
-    string cursorLeft(int k) {
-        if(k > s.size())k=s.size();
-        for(int i = 0; i < k; i++)
+    vector<int> arrayChange(vector<int>& nums, vector<vector<int>>& operations) {
+        unordered_map<int,int>mp;
+        int pos;
+        for(int i = 0; i < nums.size(); i++)
+            mp[nums[i]] = i;
+        for(vector<int>& i : operations)
         {
-            t.push_back(s.back());
-            s.pop_back();
+            pos = mp[i[0]];
+            nums[pos] = i[1];
+            mp.erase(i[0]);
+            mp[i[1]] = pos;
         }
-        int a = min(10,int(s.size()));
-        return s.substr(int(s.size()-a), a);
-    }
-    
-    string cursorRight(int k) {
-        if(k > t.size())k=t.size();
-        for(int i = 0; i < k; i++)
-        {
-            s.push_back(t.back());
-            t.pop_back();
-        }
-        int a = min(10,int(s.size()));
-        return s.substr(int(s.size()-a), a);
+        
+        return nums;
     }
 };
-
-/**
- * Your TextEditor object will be instantiated and called as such:
- * TextEditor* obj = new TextEditor();
- * obj->addText(text);
- * int param_2 = obj->deleteText(k);
- * string param_3 = obj->cursorLeft(k);
- * string param_4 = obj->cursorRight(k);
- */
