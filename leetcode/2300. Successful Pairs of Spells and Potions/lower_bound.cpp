@@ -11,7 +11,7 @@ public:
             mi = (success + spells[i] - 1 ) / spells[i];
             int a =  lower_bound(potions.begin(), potions.end(), mi)-potions.begin();
             res[i] = ps-a;
-        }
+        } // lower_bound is O(logN) using binary search
         return res;
     }
 };
