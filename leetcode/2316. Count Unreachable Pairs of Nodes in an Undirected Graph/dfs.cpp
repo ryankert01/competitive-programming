@@ -19,7 +19,8 @@ public:
         // find all possible edges
         ll ans = ((ll)n*(n-1))/2;
         
-        // count alreally connected node and calculate its edges
+        // count nodes that are connected with i, and make sure not recount this group by vector<int>vis
+        // and minus the edges that are possible, by cnt * ( cnt-1 ) / 2, same as how we calculate possible connected edges with cnt nodes.
         vector<int>vis(n,0);
         for(int i = 0; i < n; i++)
         {
