@@ -1,13 +1,4 @@
 #include<iostream>
-#include<cmath>
-#include<math.h>
-#include<vector>
-#include<deque>
-#include<algorithm>
-#include<string>
-#include<cstring>
-#include<climits>
-#include<map>
 #include<unordered_map>
 using namespace std;
 
